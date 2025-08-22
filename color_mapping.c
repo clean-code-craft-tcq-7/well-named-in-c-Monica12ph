@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <color_mapping.h>
+#include "color_mapping.h"
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
