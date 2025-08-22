@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<color_mapping.h>
+#include <color_mapping.h>
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
@@ -11,12 +11,6 @@ const char* MinorColorNames[] = {
 };
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
-
-
-typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
-} ColorPair;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
